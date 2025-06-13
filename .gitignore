@@ -1,0 +1,14 @@
+# 環境変数ファイル
+backend/.env
+frontend/.env
+
+# Node.js
+backend/node_modules/
+frontend/node_modules/
+
+# ログファイル
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
