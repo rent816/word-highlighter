@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英単語ハイライト学習アプリ</title>
+    <!-- 外部CSSファイルを読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 英単語ハイライト学習アプリ</h1>
+            <p>単語をクリックして意味を確認し、学習リストに追加しよう！</p>
+        </div>
+        
+        <div class="content">
+            <div class="text-area">
+                <div class="instructions">
+                    <p><strong>使い方:</strong> 下の英文中の単語をクリックすると、右側に意味が表示されます。「学習リストに追加」ボタンで単語を保存できます。</p>
+                </div>
+                
+                <div class="text-content" id="textContent">
+                    <p>
+                        The concept of <span class="clickable-word" data-word="artificial">artificial</span> 
+                        <span class="clickable-word" data-word="intelligence">intelligence</span> has 
+                        <span class="clickable-word" data-word="fascinated">fascinated</span> humans for 
+                        <span class="clickable-word" data-word="decades">decades</span>. As 
+                        <span class="clickable-word" data-word="technology">technology</span> continues to 
+                        <span class="clickable-word" data-word="evolve">evolve</span>, we see 
+                        <span class="clickable-word" data-word="remarkable">remarkable</span> 
+                        <span class="clickable-word" data-word="advances">advances</span> in machine learning and 
+                        <span class="clickable-word" data-word="automation">automation</span>.
+                    </p>
+                    <p>
+                        These <span class="clickable-word" data-word="developments">developments</span> have the 
+                        <span class="clickable-word" data-word="potential">potential</span> to 
+                        <span class="clickable-word" data-word="transform">transform</span> various 
+                        <span class="clickable-word" data-word="industries">industries</span>, from 
+                        <span class="clickable-word" data-word="healthcare">healthcare</span> to 
+                        <span class="clickable-word" data-word="transportation">transportation</span>. However, 
+                        it's <span class="clickable-word" data-word="crucial">crucial</span> to consider the 
+                        <span class="clickable-word" data-word="ethnic">ethical</span> 
+                        <span class="clickable-word" data-word="implications">implications</span> of these 
+                        <span class="clickable-word" data-word="powerful">powerful</span> tools.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="word-info" id="wordInfo">
+                    <h3 id="selectedWord">単語を選択してください</h3>
+                    <div class="pronunciation" id="pronunciation"></div>
+                    <div class="definition" id="definition">
+                        左の英文から単語をクリックして意味を確認しましょう。
+                    </div>
+                    <div class="example" id="example"></div>
+                    <button class="add-word-btn" id="addWordBtn">学習リストに追加 ⭐</button>
+                </div>
+                
+                <div class="word-list">
+                    <h3>📝 学習中の単語</h3>
+                    <div id="savedWords">
+                        <p style="color: #666; font-style: italic; font-size: 0.9rem;">
+                            まだ単語が登録されていません
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 外部JavaScriptファイルを読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
